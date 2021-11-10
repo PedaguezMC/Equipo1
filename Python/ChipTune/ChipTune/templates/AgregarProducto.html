@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Productos</title>
+</head>
+<body>
+<header>
+    Hola usuario:{{Usuarios}} <a href="/Login">Cerrar Sesion</a>
+</header>
+<h1>Agregar Nuevo Producto</h1>
+<form action="/GuardarProducto/{{Usuarios}}" method="post">
+    Numero de Producto
+     <input type="text" name="ClaveP"><br>
+     Nombre de Producto
+     <input type="text" name="NombreP"><br>
+     Descripcion
+     <input type="text" name="descP"><br>
+     <input type="submit" value="Registrar producto">
+      </form>
+</body>
+</html>
