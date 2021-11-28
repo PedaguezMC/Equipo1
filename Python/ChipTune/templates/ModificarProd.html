@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar</title>
+      <meta charset="utf-8">
+    <meta name="viewport" content="widht-device-widht">
+    <meta name="description" content="ChipTune Technologi">
+    <meta name="keywords" content="Chiptune Technologi">
+    <meta name="author" content="Pedro,Hugo,Jessica">
+     <link rel="stylesheet" href="{{url_for('static',filename='CSS/Estilos.css')}}">
+</head>
+<body>
+<header>
+    Hola usuario:{{Usuarios}} <a href="/Login">Cerrar Sesion</a>
+    <div class="Contenedor">
+       <div id="marca">
+           <h1><spam class="resaltado">CHIPTUNE TECHNOLOGI</spam></h1>
+                    </div>
+       <nav>
+       <ul>
+    <li><a href="/ConsultarProducto/{{Usuarios}}">Consultar Productos</a></li>
+     <li><a href="/AgregarProducto/{{Usuarios}}">Agregar Productos</a></li>
+     <li><a href="/ModificarProducto/{{Usuarios}}">Modificar Productos</a></li>
+     <li><a href="/EliminarProducto/{{Usuarios}}">Eliminar Productos</a></li>
+</ul>
+       </nav>
+       </div>
+   </div>
+</header>
+    <table border="1">
+    <th>Folio de producto</th>
+        <th> Nombre de producto</th>
+        <th>  Caracteristicas</th>
+        <th>  Precio</th>
+    <th>eliminar</th>
+    {%for producto in producto %}
+    <tr>
+        <td>{{producto.idProducto}}</td>
+        <td>{{producto.Nombre}}</td>
+        <td>{{producto.Caracteristicas}}</td>
+        <td>{{producto.Precio}}</td>
+         <td><a href="/actualizarProducto/{{Usuarios}}/{{producto.idProducto}}">Modificar</a></td>
+    </tr>
+    {%endfor%}
+</table>
+<ul>
+    <li>
+        <a href="/AgregarProducto/{{Usuarios}}">Agregar nuevo producto</a>
+    </li>
+    <li>
+        <a href="/ConsultarProducto/{{Usuarios}}">Regresar al menu de producto</a>
+    </li>
+    <li>
+        <a href="/PaginaPrincipal/{{Usuarios}}">Regresar al menu principal</a>
+    </li>
+</ul>
+</body>
+</html>

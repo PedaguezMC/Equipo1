@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Productos</title>
+       <meta charset="utf-8">
+    <meta name="viewport" content="widht-device-widht">
+    <meta name="description" content="ChipTune Technologi">
+    <meta name="keywords" content="Chiptune Technologi">
+    <meta name="author" content="Pedro,Hugo,Jessica">
+     <link rel="stylesheet" href="{{url_for('static',filename='CSS/Estilos.css')}}">
+</head>
+<body>
+<header>
+    Hola usuario:{{Usuarios}} <a href="/Login">Cerrar Sesion</a>
+    <div class="Contenedor">
+       <div id="marca">
+           <h1><spam class="resaltado">CHIPTUNE TECHNOLOGI</spam></h1>
+                    </div>
+       <nav>
+       <ul>
+    <li><a href="/ConsultarProducto/{{Usuarios}}">Consultar Productos</a></li>
+     <li><a href="/AgregarProducto/{{Usuarios}}">Agregar Productos</a></li>
+     <li><a href="/ModificarProducto/{{Usuarios}}">Modificar Productos</a></li>
+     <li><a href="/EliminarProducto/{{Usuarios}}">Eliminar Productos</a></li>
+</ul>
+       </nav>
+       </div>
+   </div>
+</header>
+<h1>Agregar Nuevo Producto</h1>
+<form action="/GuardarProducto/{{Usuarios}}" method="post">
+    Numero de Producto
+     <input type="text" name="claveP"><br>
+     Nombre de Producto
+     <input type="text" name="NombreP"><br>
+     Caracteristicas
+     <input type="text" name="CaraP"><br>
+    Precio
+     <input type="text" name="precioP"><br>
+     <input type="submit" value="Registrar producto">
+      </form>
+</body>
+</html>

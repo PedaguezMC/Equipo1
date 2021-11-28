@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PaginaPrincipal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht-device-widht">
+    <meta name="description" content="ChipTune Technologi">
+    <meta name="keywords" content="Chiptune Technologi">
+    <meta name="author" content="Pedro,Hugo,Jessica">
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/Estilos.css')}}">
+
+</head>
+<body>
+<header>
+Hola usuario:{{Usuarios}} <a href="/Login">Cerrar Sesion</a>
+   <div class="Contenedor">
+       <div id="marca">
+           <h1><spam class="resaltado">CHIPTUNE TECHNOLOGI</spam></h1>
+                    </div>
+       <nav>
+       <ul>
+    <li class="actual"><a href="/Contactos">MenuPrincipal</a></li>
+     <li><a href="/AVISOPTC">Mantenimiento</a></li>
+     <li><a href="/RedesSociales">Perifericos</a></li>
+     <li><a href="/PaginaPrincipal">Componentes</a></li>
+</ul>
+       </nav>
+       </div>
+   </div>
+<ul>
+  <li>
+      <a href=""> clientes</a>
+  </li>
+    <li>
+      <a href=""> empleados</a>
+  </li>
+    <li>
+      <a href=""> proveedores</a>
+  </li>
+    <li>
+      <a href="/productos/{{Usuarios}}"> productos</a>
+  </li>
+</ul>
+</header>
+<section id="cabecera">
+    <div class="Contenedor">
+        <h1>Con los mejores equipos y accesorios para gamer</h1>
+    </div>
+</section>
+<section id="boletin">
+ <div class="Contenedor">
+     <h1>Productos destacados</h1>
+ </div>
+</section>
+<section id="Cajas">
+  <div class="Contenedor">
+      <div class="Cajas">
+          <img src="https://static.wixstatic.com/media/562e19_894a6f04a7004b3f847f22294cf8ac89~mv2.png/v1/fill/w_500,h_500,al_c,q_90,usm_0.66_1.00_0.01/562e19_894a6f04a7004b3f847f22294cf8ac89~mv2.webp" width="150" height="150">
+          <h3>PC Gamer Asus TUF</h3>
+
+      </div>
+  </div>
+</section>
+<footer>
+    <nav>
+     <ul>
+    <li class="actual"><a href="/VMV">Vision,Mision y Valores</a></li>
+    <li><a href="/Contactos">Contactos</a></li>
+     <li><a href="/AVISOPTC">Aviso de Privacidad,Terminos y Condiciones</a></li>
+     <li><a href="/RedesSociales">Relacion Redes Sociales</a></li>
+</ul>
+    </nav>
+    <p>ChipTune Technologi &copy; 2021</p>
+</footer>
+</body>
+</html>

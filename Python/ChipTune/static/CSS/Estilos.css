@@ -1,0 +1,140 @@
+body{
+ font:15px sabo,Arial,Helvetica,sans-serif;
+ padding: 0;
+ margin:0;
+ background-color: #f4f4f4;
+}
+
+/*Estilos Globales*/
+.Contenedor{
+ width:80%;
+ margin:auto;
+ overflow:hidden;
+}
+ul{
+ margin:0;
+ padding:0;
+}
+
+/*Encabezado*/
+header{
+  background-color:#2E2E2E;
+  color:#F8F8F6;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:5px solid #F72525;
+}
+header a{
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px;
+}
+header li{
+ float:left;
+ display: inline;
+ padding:0 20px 0 20px;
+}
+header #marca{
+ float:left;
+}
+
+header #marca h1{
+margin=0;
+}
+
+header nav{
+ float: right;
+ margin-top:10px;
+}
+header.resaltado, header.actual a{
+ color:#FF0000;
+ font-weight:bold;
+}
+header a:hover{
+ color:#FF0000;
+  font-weight:bold;
+}
+
+#cabecera{
+ min-height:500px;
+ background: url('../img/gamer.jpg' ) no-repeat 0 -300px;
+ text-aling:center;
+ color:#fff;
+}
+
+#cabecera h1{
+margin-top:100px;
+font-size:55px;
+margin-bottom:10px;
+}
+
+#cabecera p{
+ font-size:20px;
+}
+
+#cajas{
+ margin-top:20px;
+}
+
+#cajas.cajas{
+ float:left;
+ text-aling:center;
+ width:30px;
+ padding:10px;
+}
+
+#cajas.cajas img{
+ width:90px;
+}
+
+footer{
+ background-color:#2E2E2E;
+  color:#F8F8F6;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:5px solid #F72525;
+ padding:20px;
+ margin-top:20px;
+ background-color:#FF0040;
+ text-aling:center;
+}
+footer nav{
+ float: center;
+ margin-top:10px;
+}
+footer.resaltado, header.actual a{
+ color:#Fff;
+ font-weight:bold;
+}
+
+footer a{
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px;
+}
+footer li{
+ float:left;
+ display: inline;
+ padding:0 20px 0 20px;
+}
+footer #marca{
+ float:left;
+}
+
+footer #marca h1{
+margin=0;
+}
+
+footer nav{
+ float: right;
+ margin-top:10px;
+}
+
+footer a:hover{
+ color:#Fff;
+  font-weight:bold;
+}
+
+
